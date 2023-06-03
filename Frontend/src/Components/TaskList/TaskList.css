@@ -1,0 +1,9 @@
+.list {
+    font-size: small;
+    padding: 0;
+    margin: 0;
+    
+    border-bottom: 1px solid #B5B2B2;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}

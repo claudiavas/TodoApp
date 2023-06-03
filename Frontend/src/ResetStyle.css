@@ -1,0 +1,130 @@
+/* Reset Stylesheet*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    font-family: 'Montserrat', sans-serif;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: inline;
+}
+body {
+	line-height: 1.2;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+
+
+
+/* Estilos para el cuerpo del documento */
+body {
+    max-width: 800px;
+    margin: 50px;
+    background-color: rgb(255, 255, 255); /* Color de fondo */
+  }
+  
+  /* Estilos para el encabezado */
+  header {
+    width: 100%;
+    text-align: center;
+    background-color: #f2f2f2; /* Color de fondo */
+  }
+  
+  /* Estilos para la navegación */
+  nav {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  
+  nav a {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  /* Estilos para el contenido */
+  main {
+    width: 100%;
+  }
+ 
+   
+  
+  /* Estilos para las listas */
+  ul {
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 0px;
+    margin-left: 20px;
+    padding: 0;
+  }
+  
+  /* Estilos para las columnas */
+  section {
+    width: 50%;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+  
+  section:last-child {
+    padding-right: 0;
+  }
+
+  
+  
+  /* Establecer el estilo de las dos columnas */
+  #page {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #column1 {
+    flex: 1 1 60%; /* Ancho de la primera columna */
+    margin-right: 40px; /* Separación entre columnas */
+  }
+  
+  #column2 {
+    flex: 1 1 40%; /* Ancho de la segunda columna */
+  }
+  

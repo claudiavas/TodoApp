@@ -1,0 +1,55 @@
+.card {
+    text-align: left;
+    padding: 0cm;
+    margin-inline: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.firstlinecard {
+    text-align: left;
+    padding: 0cm;
+    margin-inline: 0;
+    width: 100%;
+    align-content: center;
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr;
+    grid-gap: 1px;
+
+}
+.secondlinecard {
+    text-align: left;
+    padding: 0cm;
+    margin-inline: 0;
+    width: 100%;
+
+}
+
+.custom-checkbox {
+    transform: scale(1.5);
+  }
+
+
+.list {
+    font-size: small;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 0.5fr 6fr 0.5fr 0.5fr 0.5fr;
+    grid-gap: 1px;
+    align-content: center;
+    justify-content: start;
+    align-items: center;
+    justify-items: start;
+    border-bottom: 1px solid #B5B2B2;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.deleted-task {
+    text-decoration: line-through;
+  }
