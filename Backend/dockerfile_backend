@@ -1,0 +1,20 @@
+# Usa una imagen de Node.js como base
+FROM node:latest
+
+# Establece el directorio de trabajo en /app
+WORKDIR /app
+
+# Copia el archivo de configuración del package.json y package-lock.json
+COPY package*.json ./
+
+# Instala las dependencias del proyecto
+RUN npm install
+
+# Copia el resto de los archivos de la aplicación
+COPY . .
+
+# Exponer el puerto 8000 para que Express pueda escuchar las solicitudes
+EXPOSE 8000
+
+# Iniciar el servidor Node.js
+CMD ["node", "app.js"]

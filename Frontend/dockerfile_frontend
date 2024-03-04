@@ -1,0 +1,25 @@
+# Etapa de construcción
+FROM node:latest AS build
+WORKDIR /app
+
+# Agregar mensaje de depuración
+RUN echo "Copiando archivos de package.json..."
+COPY package*.json ./
+
+# Agregar mensaje de depuración
+RUN echo "Instalando dependencias..."
+RUN npm install
+
+# Agregar mensaje de depuración
+RUN echo "Copiando archivos de la aplicación..."
+COPY . .
+
+# Agregar mensaje de depuración
+RUN echo "Compilando la aplicación..."
+RUN npm run build
+
+# Etapa de producción
+FROM nginx:alpine
+COPY --from=build /app/dist /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]

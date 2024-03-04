@@ -1,0 +1,20 @@
+version: 'v2.24.5-desktop.1'
+services:
+  frontend:
+    build:
+      context: ./Frontend
+      dockerfile: dockerfile_frontend
+    ports:
+      - "80:80"
+
+  backend:
+    build:
+      context: ./Backend
+      dockerfile: dockerfile_backend
+    ports:
+      - "3000:3000"
+    environment:
+      - DB_USER=mcvasquezas
+      - DB_PASSWORD=mxyOOwuiBR62jK9t
+      - DB_SERVER=cluster0.r5v72vh.mongodb.net
+      - DB_NAME=mydatabase
